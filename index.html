@@ -1,0 +1,41 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Valorant Agent Lineups</title>
+  </head>
+  <body>
+    <audio
+      id="bg-audio"
+      src="/Valorant-music.mp3"
+      autoplay
+      loop
+      muted
+      controls
+    ></audio>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const audio = document.getElementById('bg-audio')
+        // Some browsers require a user gesture before unmuting,
+        // but we can at least set volume here.
+        audio.volume = 0.5
+        // Attempt to unmute (may still require a click)
+        audio.muted = false
+        // Try playing again
+        audio.play().catch(() => {
+          // Autoplay was blocked—user will need to click play.
+          console.warn('Audio autoplay blocked; user interaction required.')
+        })
+      })
+    </script>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
