@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3bc3f9a7-d5fd-4ef1-aea7-7b087bc87d36)# Web Development Project 7 - *Valorant Agent Lineups*
+# Web Development Project 7 - *Valorant Agent Lineups*
 
 Submitted by: **Abha Mam**
 
@@ -49,12 +49,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img
-  src="https://media3.giphy.com/media/LGdnhVHMlW6lPWdOmP/giphy.gif"
-  alt="Video Walkthrough"
-  title="Video Walkthrough"
-  width="400"
-/>
+![image](https://github.com/user-attachments/assets/3bc3f9a7-d5fd-4ef1-aea7-7b087bc87d36)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with GIPHY
