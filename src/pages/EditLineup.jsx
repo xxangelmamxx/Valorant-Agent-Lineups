@@ -1,9 +1,8 @@
-// src/pages/EditLineup.jsx
 import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { supabase } from '../client'
 
-// map & agent lists
+// Your map & agent lists
 const mapsList = ['Bind','Haven','Split','Ascent','Icebox','Breeze','Fracture','Lotus','Pearl','Sunset']
 const agentsList = [
   'Jett','Sage','Omen','Phoenix','Raze','Reyna','Killjoy','Cypher','Viper','Sova',
@@ -153,7 +152,12 @@ export default function EditLineup() {
       </div>
 
       {/* Actions */}
-      <button onClick={handleSave}>Save</button>
+      <button
+        disabled={selectedAgents.length !== 5}
+        onClick={handleSave}
+      >
+        Save
+      </button>
       <button
         className="secondary"
         onClick={() => navigate('/view')}
